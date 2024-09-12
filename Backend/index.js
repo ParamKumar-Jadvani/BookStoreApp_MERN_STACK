@@ -17,7 +17,6 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 const URI = process.env.MongoDBURI;
 
-// defining routes
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
