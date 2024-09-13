@@ -20,6 +20,10 @@ const URI = process.env.MongoDBURI;
 app.use("/book", bookRoute);
 app.use("/user", userRoute);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to API !!");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
   connect_to_DB();
